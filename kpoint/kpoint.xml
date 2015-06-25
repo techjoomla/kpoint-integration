@@ -1,0 +1,63 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<extension version="3.0" type="plugin" group="video" method="upgrade">
+	<name>Techjoomla- Kpoint Video API</name>
+	<author>Techjoomla</author>
+	<creationDate>3rd April 2014</creationDate>
+	<copyright>(C)techjoomla.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@techjoomla.com</authorEmail>
+	<authorUrl>www.techjoomla.com</authorUrl>
+	<version>1.0</version>
+
+	<description>Techjoomla- Kpoint Video API</description>
+
+	<files>
+		<file plugin="kpoint">kpoint.php</file>
+		<folder>assets</folder>
+		<folder>kpoint</folder>
+	</files>
+	<languages folder="language">
+			<language tag="en-GB">en-GB/en-GB.plg_tjvideo_kpoint.ini</language>
+	</languages>
+
+	<!-- Fields for Joomla 1.6.x and onwards -->
+	<config name="params">
+		<fields name="params">
+			<fieldset name="basic" label="PLG_TJVIDEO_KPOINT_PLUG_NAME" >
+				<field name="plugin_name" type="text" default="kpoint" label="PLG_TJVIDEO_KPOINT_PLUG_NAME" description="" />
+			</fieldset>
+		</fields>
+
+		<fields name="params">
+			<fieldset name="basic" label="PLG_TJVIDEO_KPOINT_DOMAIN_NAME" >
+				<field name="domain_name" type="text" default="http://dev13.kpoint.com/" label="PLG_TJVIDEO_KPOINT_DOMAIN_NAME" description="" />
+			</fieldset>
+		</fields>
+
+
+		<fields name="params">
+			<fieldset name="basic" label="PLG_TJVIDEO_KPOINT_CLIENT_ID" >
+				<field name="client_id" type="text" default="" label="PLG_TJVIDEO_KPOINT_CLIENT_ID" description="" />
+			</fieldset>
+		</fields>
+
+		<fields name="params">
+			<fieldset name="basic" label="PLG_TJVIDEO_KPOINT_SECRET_KEY" >
+				<field name="secret_key" type="text" default="" label="PLG_TJVIDEO_KPOINT_SECRET_KEY" description="" />
+			</fieldset>
+		</fields>
+
+
+		<fields name="params">
+			<fieldset name="basic" label="PLG_TJVIDEO_KPOINT_EMAIL_ID" >
+				<field name="email_id" type="text" default="" label="PLG_TJVIDEO_KPOINT_EMAIL_ID" description="" />
+			</fieldset>
+		</fields>
+
+		<fields name="params">
+			<fieldset name="basic" label="PLG_TJVIDEO_KPOINT_DISPLAY_NAME" >
+				<field name="display_name" type="text" default="" label="PLG_TJVIDEO_KPOINT_DISPLAY_NAME" description="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
